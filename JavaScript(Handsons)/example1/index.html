@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    <script src="script.js" defer>
+       
+    </script>
+    <style type="text/css">
+    .btns{
+        margin-top: 20px;
+    }
+    #addevent{
+        margin-right: 50px;
+    }
+    table, td {
+  border: 1px solid black;
+}
+    </style>
+
+  
+</head>
+<body>
+    <center>
+    <h1>Validating Duplicate Events</h1></center>
+    <div class="inputbox">
+    <center>
+    <label >Enter the Event Name :</label>
+
+    <input id="eventname" type="text" name="eventname"></center>
+    </div>
+    <div class="btns"> 
+        <center>
+        <button id="addevent" >Add Event</button>
+        <button id="displayevent" >Display Event</button>
+        
+        <p id="msg"></p>
+        
+    </center>
+    </div>
+    <div id="welcomeDiv"  style="display:none;" class="answer_list" > 
+        <center>
+            <b><h3>Event Details</h3></b>
+        <table id="myTable">
+            
+          </table>
+        </center>
+    </div>
+   
+
+</body>
+</html>

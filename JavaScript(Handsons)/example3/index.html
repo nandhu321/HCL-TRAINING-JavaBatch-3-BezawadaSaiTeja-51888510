@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="script2.js" defer>
+      
+
+    </script>
+
+    <style type="text/css">
+    .btns{
+        margin-top: 20px;
+    }
+    #addevent,#pop{
+        margin-right: 50px;
+    }
+    table, td {
+  border: 1px solid black;
+}
+    </style>
+
+  
+</head>
+<body>
+    <center>
+    <h1>Events List</h1></center>
+    <div class="inputbox">
+    <center>
+    <label >Enter the Events :</label>
+
+    <input id="eventname" type="text" name="eventname"></center>
+    </div>
+    <div class="btns"> 
+        <center>
+        <button id="addevent" >Push</button>
+        <button id="pop">Pop</button>
+        <button id="displayevent" onclick="showDiv()">Display Event</button>
+        
+        <p id="msg"></p>
+        
+    </center>
+    </div>
+  
+    <div id="dis"  style="display:none; text-align: center; " class="answer_list" > 
+        <center><b><h3>Event in the array</h3></b>
+            <ul id="ul"></ul>
+        </center>
+       
+        
+    </div>
+   
+    
+</body>
+</html>
