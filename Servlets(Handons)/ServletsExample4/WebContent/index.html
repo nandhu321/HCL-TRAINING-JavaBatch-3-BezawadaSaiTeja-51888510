@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style type="text/css">
+input
+{
+margin-bottom: 10px;
+}
+
+#exhibtion
+{
+margin-left: 5px;
+}
+#stage
+{
+margin-left: 90px;
+}
+h1
+{
+color:#32CD32;
+}
+
+
+</style>
+<body>
+<h1>Event Creation</h1>
+
+<form action="./index" method="post">
+<label>Event Name : </label>
+<input type="text" name="eventname"><br>
+<label>Hall Name : </label>
+<input type="text" name="hallname"><br>
+<label>Event Type : </label>
+<input type="radio" id="exhibition" name="type1" value="exhibition">
+<label >Exhibition</label><br>
+<input type="radio" id="stage" name="type1" value="stageShow">
+<label >Stage Show</label><br>
+<label>Details : </label>
+<input type="text" name="details"><br>
+<label>Owner : </label>
+<input type="text" name="owner"><br>
+<label>Start Date : </label>
+<input type="text" name="startDate"><br>
+<label>End Date : </label>
+<input type="text" name="endDate"><br>
+<input type="submit" value="create">
+
+</form>
+
+</body>
+</html>
