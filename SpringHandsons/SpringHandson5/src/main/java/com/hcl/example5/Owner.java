@@ -10,7 +10,7 @@ public class Owner {
 
 	public void setDetails(String name, String password, String mobileNumber) {
 		this.name=name;
-		this.password=password;
+		this.setPassword(password);
 		this.mobileNumber=mobileNumber;
 	}
 
@@ -18,6 +18,14 @@ public class Owner {
 	{
 		System.out.println("Name : "+name);
 		System.out.println("Mobile Number : "+mobileNumber);
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 }

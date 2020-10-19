@@ -4,6 +4,7 @@ import java.io.InputStreamReader;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.hcl.example5.Config;
 import com.hcl.example5.Owner;
@@ -19,6 +20,7 @@ public class Test {
 		String mobileNumber=br.readLine();
 		ow.setDetails(name, password, mobileNumber);
 		ow.display();
+		((ClassPathXmlApplicationContext)ac).close();
 	}
 
 }
