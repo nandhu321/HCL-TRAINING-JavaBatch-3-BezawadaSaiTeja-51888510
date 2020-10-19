@@ -16,6 +16,7 @@ public class Test {
 	cl.insert(c2);
 	cl.insert(c3);
 	cl.discount();
+	((ClassPathXmlApplicationContext)ac).close();
 	}
 
 }

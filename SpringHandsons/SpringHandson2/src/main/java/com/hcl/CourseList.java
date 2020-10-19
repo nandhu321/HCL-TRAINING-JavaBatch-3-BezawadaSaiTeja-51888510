@@ -13,7 +13,7 @@ public class CourseList {
 	public ArrayList<String> noOfCourses(double fee)
 	{
 		ArrayList<String> al=new ArrayList<String>();
-		Iterator itr=a.iterator();
+		Iterator<Course> itr=a.iterator();
 		while(itr.hasNext())
 		{
 			Course c=(Course)itr.next();

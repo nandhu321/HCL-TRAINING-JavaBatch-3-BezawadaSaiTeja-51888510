@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 import org.springframework.context.ApplicationContext;
+
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Test {
@@ -38,6 +39,6 @@ public class Test {
 		}
 			
 		
-		
+		((ClassPathXmlApplicationContext)ac).close();
 	}
 }

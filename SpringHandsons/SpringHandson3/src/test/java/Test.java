@@ -1,6 +1,7 @@
 import org.hcl.Course;
 import org.hcl.CourseList;
 import org.springframework.context.ApplicationContext;
+
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
@@ -18,6 +19,7 @@ public class Test {
 		cl.insert(c2);
 		cl.insert(c3);
 		cl.revenue();
+		((ClassPathXmlApplicationContext)ac).close();
 	}
 
 }
