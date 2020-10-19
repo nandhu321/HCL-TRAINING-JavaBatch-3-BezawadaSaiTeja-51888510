@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	<bean name="address1" class="com.hcl.Address">
+		<property name="line1" value="Door no:1-104,chinnapulipaka"/>
+		<property name="line2" value="Boddapdu,near Kankipadu"/>
+		<property name="city" value="Vijayawada"/>
+		<property name="pincode" value ="521151"/>	
+	</bean>
+	<bean name="address2" class="com.hcl.Address">
+		<property name="line1" value="Door no:1-10,vuyyur"/>
+		<property name="line2" value="katuru road,near masid"/>
+		<property name="city" value="vuyyur"/>
+		<property name="pincode" value ="521100"/>	
+	</bean>
+	<bean name="emp1" class="com.hcl.Employee">
+		<property name="employeeName" value="Bezawada Sai Teja"/>
+		<property name="employeeMobileNumber" >
+		<list>
+		<value>9182542057</value>
+		<value>9393447665</value>
+		<value>9392487688</value>
+		</list>
+		</property>
+		<property name="employeeSalary" value="35000"/>
+		<property name="employeeEmail" value ="saiteja.bezawada321@gmail.com"/>	
+		<property name="address" ref="address1"></property>
+	</bean>
+	<bean name="emp2" class="com.hcl.Employee">
+		<property name="employeeName" value="Abdul Gaffur"/>
+		<property name="employeeMobileNumber" >
+		<list>
+		<value>9232224222</value>
+		<value>9389896345</value>
+		<value>9100443420</value>
+		</list>
+		</property>
+		<property name="employeeSalary" value="25000"/>
+		<property name="employeeEmail" value ="adul@gmail.com"/>	
+		<property name="address" ref="address2"></property>
+	</bean>
+	
+</beans>
